@@ -3,46 +3,47 @@ import { SlideData, Theme } from './types';
 
 export const DEFAULT_COLOR = '#2563EB';
 
+// Al-Tajer Digital Modern Color Themes
 export const THEMES: Theme[] = [
   {
-    name: "أزرق عميق (زيتي)",
-    gradient: "linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%)",
+    name: "أزرق التاجر الكهربائي",
+    gradient: "linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%)",
+    textColor: "text-slate-900",
+    accentColor: "#2563EB",
+    badgeBg: "bg-blue-50",
+    badgeText: "text-blue-600"
+  },
+  {
+    name: "أبيض نقي مع لمسة زرقاء",
+    gradient: "linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%)",
+    textColor: "text-slate-900",
+    accentColor: "#2563EB",
+    badgeBg: "bg-blue-50",
+    badgeText: "text-blue-600"
+  },
+  {
+    name: "ليلي احترافي",
+    gradient: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
     textColor: "text-white",
-    accentColor: "#3b82f6",
+    accentColor: "#3B82F6",
     badgeBg: "bg-blue-500/20",
     badgeText: "text-blue-300"
   },
   {
-    name: "أرجواني ملكي",
-    gradient: "linear-gradient(135deg, #2e1065 0%, #701a75 100%)",
-    textColor: "text-white",
-    accentColor: "#d946ef",
-    badgeBg: "bg-fuchsia-500/20",
-    badgeText: "text-fuchsia-300"
-  },
-  {
-    name: "غروب دافئ",
-    gradient: "linear-gradient(135deg, #451a03 0%, #92400e 100%)",
-    textColor: "text-white",
-    accentColor: "#f59e0b",
-    badgeBg: "bg-amber-500/20",
-    badgeText: "text-amber-200"
-  },
-  {
-    name: "زمردي فاخر",
-    gradient: "linear-gradient(135deg, #064e3b 0%, #065f46 100%)",
-    textColor: "text-white",
-    accentColor: "#10b981",
-    badgeBg: "bg-emerald-500/20",
-    badgeText: "text-emerald-300"
-  },
-  {
-    name: "كلاسيك فاتح",
-    gradient: "linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%)",
+    name: "أرجواني عصري",
+    gradient: "linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%)",
     textColor: "text-slate-900",
-    accentColor: "#2563eb",
-    badgeBg: "bg-blue-50",
-    badgeText: "text-blue-600"
+    accentColor: "#7C3AED",
+    badgeBg: "bg-purple-100",
+    badgeText: "text-purple-600"
+  },
+  {
+    name: "أخضر نعناعي",
+    gradient: "linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%)",
+    textColor: "text-slate-900",
+    accentColor: "#10B981",
+    badgeBg: "bg-emerald-100",
+    badgeText: "text-emerald-600"
   }
 ];
 
@@ -53,26 +54,79 @@ export const LOGOS = [
   '/logooo/logo-4.png'
 ];
 
+// Al-Tajer Digital Platform - Modern Carousel Slides (7 slides)
 export const INITIAL_SLIDES: SlideData[] = [
   {
     id: '1',
     type: 'hero',
-    title: 'حول فكرتك إلى واقع ملموس مع خبرائنا',
-    subtitle: 'نحن نساعدك على بناء العلامة التجارية التي تحلم بها بأحدث تقنيات التصميم والذكاء الاصطناعي.',
+    title: 'انطلق بمشروعك الرقمي نحو النجاح',
+    subtitle: 'منصة التاجر الرقمية تمنحك كل الأدوات اللازمة لتحويل فكرتك إلى مشروع تجاري ناجح بخطوات ذكية ومدروسة',
     accentColor: DEFAULT_COLOR,
-    footer: 'احجز استشارتك المجانية'
+    footer: 'ابدأ رحلتك المجانية الآن'
   },
   {
     id: '2',
     type: 'grid',
-    title: 'لماذا تختار منصتنا؟',
-    subtitle: 'نقدم لك حلولاً متكاملة تختصر عليك الوقت والجهد في رحلتك الريادية.',
+    title: 'لماذا تختار منصة التاجر؟',
+    subtitle: 'نقدم لك منظومة متكاملة من الخدمات المصممة خصيصاً لرواد الأعمال والمستثمرين',
     content: [
-      'سرعة فائقة في الإنجاز',
-      'دقة عالية في النتائج',
-      'دعم فني على مدار الساعة',
-      'تكلفة تنافسية ومدروسة'
+      'حلول تقنية متطورة',
+      'دعم استشاري متخصص',
+      'أدوات تحليل ذكية',
+      'شراكات استراتيجية'
     ],
     accentColor: DEFAULT_COLOR
+  },
+  {
+    id: '3',
+    type: 'steps',
+    title: 'رحلة النجاح في ٣ خطوات',
+    subtitle: 'طريقك نحو النجاح التجاري لم يكن أبداً بهذه السهولة',
+    content: [
+      'سجّل حسابك المجاني وابدأ الرحلة',
+      'اختر الخدمات المناسبة لمشروعك',
+      'تابع نموّك مع أدوات التحليل المتقدمة'
+    ],
+    accentColor: DEFAULT_COLOR
+  },
+  {
+    id: '4',
+    type: 'stat',
+    title: 'أرقام تعكس ثقة العملاء',
+    subtitle: 'نفخر بخدمة آلاف الرواد وبناء شراكات ناجحة',
+    content: [
+      '+٥٠٠٠ عميل سعيد',
+      '+٩٨٪ نسبة الرضا',
+      '+٢٤/٧ دعم متواصل'
+    ],
+    accentColor: DEFAULT_COLOR
+  },
+  {
+    id: '5',
+    type: 'feature',
+    title: 'حلول ذكية مدعومة بالذكاء الاصطناعي',
+    subtitle: 'استفد من أحدث التقنيات لتحليل السوق واتخاذ القرارات الصحيحة في الوقت المناسب',
+    accentColor: DEFAULT_COLOR,
+    footer: 'اكتشف المزيد من الميزات'
+  },
+  {
+    id: '6',
+    type: 'comparison',
+    title: 'قارن واختر الأنسب لك',
+    subtitle: 'باقات مرنة تناسب جميع مراحل نمو مشروعك',
+    content: [
+      'باقة البداية: أساسيات قوية',
+      'باقة النمو: أدوات متقدمة',
+      'باقة الشركات: حلول مخصصة'
+    ],
+    accentColor: DEFAULT_COLOR
+  },
+  {
+    id: '7',
+    type: 'cta',
+    title: 'مستعد لبدء رحلتك؟',
+    subtitle: 'انضم اليوم إلى آلاف الناجحين على منصة التاجر الرقمية',
+    accentColor: DEFAULT_COLOR,
+    footer: 'سجّل الآن واحصل على استشارة مجانية'
   }
 ];
