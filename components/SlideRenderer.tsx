@@ -163,7 +163,7 @@ const SlideRenderer = forwardRef<HTMLDivElement, Props>(({ slide, themeIndex, lo
       {/* Design Footer - Al-Tajer Digital Branding */}
       <footer className={`design-footer ${isDark || isBackgroundImg ? 'is-dark' : 'is-light'}`} style={{ backgroundColor: theme.accentColor }}>
         <span className="footer-left">منصة التاجر</span>
-        <span className="footer-right">al-tajer.com</span>
+        <span className="footer-right">dtajer.com</span>
       </footer>
     </div>
   );
